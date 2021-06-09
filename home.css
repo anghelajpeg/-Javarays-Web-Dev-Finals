@@ -34,19 +34,19 @@ Variables for colors,
 	margin-left: 80px;
 	cursor: pointer;
 }
-ul{
+.ul-header{
 	flex: 1;
 	text-align: right;
 	margin: 30px;
 	margin-right: 100px;
 	margin-top: 38px;
 }
-ul li{
+.ul-header .li-header{
 	display: inline-block;
 	list-style: none;
 	margin: 20px;
 }
-ul li a{
+.ul-header .li-header a{
 	text-decoration: none;
 	color: var(--menu-color);
 	padding: 0px;
@@ -64,20 +64,38 @@ ul li a{
 	position: relative;
 }
 .footer .f-cont{
-	border: 1px solid black;
 	height: 348px;
 	display: flex;
 }
+.footer{
+	color: var(--muted-color);
+}
+.f-cont{
+	background-color: var(--accent-med);
+	padding-top: 10px;
+}
 .f-sec{
-	flex: 1;
-	border: 1px solid black;
 	padding-top: 10px;
 	padding-left: 10px;
 }
 .f-sec img{
 	width: 50px;
-	margin: 5px;
 	float:left;
+}
+.f-sec .news1 img, .news2 img, .news3 img{
+	width: 60px;
+	height: 50px;
+	margin-right: 30px;
+}
+.f-sec .news1, .news2, .news3{
+	margin: 10px 0;
+}
+.links{
+	margin-left: 20px;
+	width: 25%;
+}
+.news{
+	width: 35%;
 }
 .footer .f-bott{
 	background-color: var(--accent-meddark);
@@ -98,6 +116,44 @@ p{
 }
 #fdate, #sdate, #thdate{
 	color: var(--muted-color);
+	opacity: 0.8;
 	padding-top: 5px;
 	padding-bottom: 20px;
+}
+.navbar-bott{
+    display: flex;
+    align-items: center;
+	height: 70px;
+}
+.navbar-bott p{
+	margin-left: 50px;
+}
+.ul-bott{
+	flex: 1;
+	text-align: right;
+}
+.ul-bott .li-bott{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+.ul-bott .li-bott a{
+	text-decoration: none;
+	color: var(--muted-color);
+	position: relative;
+}
+
+.twitter, .facebook{
+	width: 150px;
+	float: left;
+}
+
+.twitter p, .facebook p{
+	margin: 8px;
+	font-size: 12px;
+}
+
+.twitter img, .facebook img{
+	margin-right: 10px;
+	width: 40px;
 }

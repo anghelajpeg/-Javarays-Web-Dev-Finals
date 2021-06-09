@@ -77,6 +77,7 @@ ul li a{
 .f-sec img{
 	width: 50px;
 	margin: 5px;
+	float:left;
 }
 .footer .f-bott{
 	background-color: var(--accent-meddark);
@@ -86,4 +87,17 @@ ul li a{
 	position: absolute;
 	bottom: 0px;
 	line-height: 50px;
+}
+p{
+	margin: 0;
+	vertical-align: top;
+}
+#hours, #num{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#fdate, #sdate, #thdate{
+	color: var(--muted-color);
+	padding-top: 5px;
+	padding-bottom: 20px;
 }

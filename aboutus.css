@@ -3,13 +3,18 @@ html, body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
 }
+
+/* 
+Variables for colors,
+	imbis nga #FAF7F1 imo ibutang sa css
+	pde siya var(--accent-light)
+*/
 
 :root{ 
 	--highlighted-text: #C15F00;
 	--accent-meddark: #F4BF8C;
-	--highlight-color: #F37C48;
+	--menu-color: #F37C48;
 	--muted-color: #7A5F46;
 	--accent-light: #FAF7F1;
 	--accent-med: #F6EAD9;
@@ -32,9 +37,9 @@ html, body{
 .ul-header{
 	flex: 1;
 	text-align: right;
-	margin: 20px;
+	margin: 30px;
 	margin-right: 100px;
-	margin-top: 30px;
+	margin-top: 38px;
 }
 .ul-header .li-header{
 	display: inline-block;
@@ -43,7 +48,7 @@ html, body{
 }
 .ul-header .li-header a{
 	text-decoration: none;
-	color: var(--muted-color);
+	color: var(--menu-color);
 	padding: 0px;
 	position: relative;
 } 
@@ -151,8 +156,4 @@ p{
 .twitter img, .facebook img{
 	margin-right: 10px;
 	width: 40px;
-}
-
-.navbar .li-header.highlighted a{
-    color: var(--highlight-color);
 }

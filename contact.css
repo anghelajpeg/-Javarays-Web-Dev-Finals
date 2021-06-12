@@ -4,6 +4,7 @@ html, body{
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: var(--muted-color);
 }
 
 :root{ 
@@ -19,6 +20,7 @@ html, body{
 	height: 100%;
 	width: 100%;
 	margin: auto;
+    
 }
 .navbar{
     display: flex;
@@ -57,13 +59,14 @@ html, body{
 .footer{
 	height: 400px;
 	position: relative;
+    bottom: 0;
+    color: var(--muted-color);
 }
 .footer .f-cont{
 	height: 348px;
 	display: flex;
-}
-.footer{
-	color: var(--muted-color);
+    position: relative;
+    bottom: 0;
 }
 .f-cont{
 	background-color: var(--accent-med);
@@ -155,4 +158,91 @@ p{
 
 .navbar .li-header.highlighted a{
     color: var(--highlight-color);
+}
+
+.wrapper .navbar-hr{
+    width: 100%;
+    background-color: var(--accent-meddark);
+    border-width: 0;
+    color: var(--accent-meddark);
+    height: 1px;
+    margin: 0;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    color: var(--muted-color);
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top .here{
+    align-self: flex-end;
+}
+
+.body-container{    
+    background-color: var(--accent-light);
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.body-container .left{
+    margin: 2rem;
+    height: 500px;
+    width: 60%;
+    margin-right: 0;
+}
+
+.body-container .right{
+    margin: 2rem;
+    height: 500px;
+    width: 35%;
+    padding-left: 2.5rem;
+    border-left: 2px solid var(--accent-meddark);
+    border-left-style: solid;
+}
+.body-container .right .sidenews{
+    cursor: pointer;
+}
+.body-container .right .socmed{
+    margin-top: 1.5rem;
+    background-color: var(--accent-med);
+    display: flex;
+    width: 260px;
+    padding: 0.6rem;
+}
+.body-container .right .socmed img{
+    width: 35px;
+    height: 35px;
+    padding: 0 5px;
+}
+.body-container .right .socmed p{
+    font-size: 12px;
+    padding: 0 5px;
+    color: var(--muted-color);
+}
+.sidenews .news1 img, .news2 img, .news3 img{
+	width: 50px;
+	height: 50px;
+    float: left;
+    margin-right: 1.5rem ;
+}
+.body-container .right .recent-works a{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    text-decoration: none;
+    color: var(--muted-color);
+}
+.body-container .left form span{
+    color: var(--accent-meddark);
+}
+.body-container .left form{
+    margin: 1rem;
+}
+.body-container .left form input{
+    margin: 0.5rem 0;
 }

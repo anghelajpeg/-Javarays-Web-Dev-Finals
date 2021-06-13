@@ -4,30 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Javarays | Home</title>
+
+    <link rel="stylesheet" href="aboutus.css">
+    <title>Javarays | About Us</title>
+    <link rel="icon" href="images/javarayslogo.svg" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+
     <div class="wrapper">
 		<div class="navbar">
-			<img src="images/javarayslogo.png">
+			<img src="images/javarayslogo.svg">
             <ul class="ul-header">
+                <!-- sa li class, kaksa ang "highlighted" kag e transfer sa kung ano kaw nga page-->
                 <li class="li-header"><a href="home.html">Home</a></li>
-                <li class="li-header"><a href="aboutus.html">About Us</a></li>
+                <li class="li-header highlighted"><a href="aboutus.html">About Us</a></li>
                 <li class="li-header"><a href="services">Services</a></li>
                 <li class="li-header"><a href="gallery">Gallery</a></li>
                 <li class="li-header"><a href="blog">Blog</a></li>
-                <li class="li-header"><a href="contact">Contact Us</a></li>
+                <li class="li-header"><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
-    
+        <hr class="navbar-hr">
+        
+        <div class="top">
+            <p>About Us</p>
+            <p class="here">You are here: Home | About Us</p>
+        </div>
+
+        <div class="body-container">
+
+            <div class="left">
+                <div class="carousel-container">
+                    <ul class="carousel my-carousel">
+                        <input class="carousel__activator" type="radio" id="A" name="activator" checked="checked"/>
+                        <input class="carousel__activator" type="radio" id="B" name="activator"/>
+                        <input class="carousel__activator" type="radio" id="C" name="activator"/>
+                        
+                        <li class="carousel__slide">
+                         
+                        </li>
+                        <li class="carousel__slide">
+                         
+                        </li>
+                        <li class="carousel__slide">
+                        
+                        </li>
+                        <div class="carousel__indicators">
+                          <label class="carousel__indicator" for="A"></label>
+                          <label class="carousel__indicator" for="B"></label>
+                          <label class="carousel__indicator" for="C"></label>
+                        </div>
+                      </ul>
+                </div>
+            </div>
+
+            
+            
+            <div class="right">
+                <h1>Hello we are Javarays!</h1>
+                <pre>
+We are a startup tech company aiming to bring 
+solutions to your technological needs. 
+Our mission is to produce flexible, efficient, 
+and visually appealing applications to our clients.
+We want to turn your plans and dreams into reality!
+
+                </pre>
+                <h1>We are knowledgeable in</h1>
+
+                <div class="java">
+                    <div class="bar">
+                        <p>Java</p>
+                    </div>
+                </div>
+                  
+                  <div class="javascript">
+                    <div class="bar" >
+                        <p>Javascript</p>
+                    </div>
+                  </div>
+                  
+                  <div class="cplusplus">
+                    <div class="bar">
+                        <p>C++</p>
+                    </div>
+                  </div>
+
+                  <div class="python">
+                    <div class="bar">
+                        <p>Python</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-heading">
+                <h1>MEET THE TEAM</h1>
+                <p>We are a team of dedicated and passionate young individuals</p>
+            </div>
+
+            <div class="pictures">
+                <img src="/images/about_anghela.jpg" alt="Anghela">
+                <img src="/images/about_nath.jpg" alt="Nathalie">
+                <img src="/images/about_cj.jpg" alt="CJ">
+            </div>
+
+            <div class="description">
+                <div class="anghela">
+                    <h2>Anghela Abastillas</h2>
+                    <h3>Front-end Developer</h3>
+                    <pre>
+I ensure that website visitors can easily interact 
+with the page. Through the combination of 
+design, technology and programming to code a 
+website's appearance.
+                    </pre>
+                </div>
+
+                <div class="nathalie">
+                    <h2>Nathalie Elgaran</h2>
+                    <h3>Back-end Developer</h3>
+                    <pre>
+I am responsible for server-side web application 
+logic and integration of the work front-end 
+developers do. I also  write the web services 
+and APIs used by our front-end developers and 
+mobile application developers.
+                    </pre>
+                </div>
+
+                <div class="cj">
+                    <h2>Cressida Jane Espino</h2>
+                    <h3>UI/UX Designer</h3>
+                    <pre>
+My job is to create user-friendly interfaces 
+that enable our clients and their users to 
+understand how to use our complex technical 
+products. 
+                    </pre>
+                </div>
+            </div>
+        </div>
 
         
-
-
-    </div> <!--end tag sng wrapper-->
-
     <div class="footer">
     	<div class="f-cont">
     		<div class="f-sec links">
@@ -89,15 +211,18 @@
             <div class="navbar-bott">
                 <p>&copy; Copyright 2021 Javarays Tech </p>
                 <ul class="ul-bott">
-                    <li class="li-bott"><a href="home">Home</a></li>
-                    <li class="li-bott"><a href="about">About Us</a></li>
-                    <li class="li-bott"><a href="services">Services</a></li>
-                    <li class="li-bott"><a href="gallery">Gallery</a></li>
-                    <li class="li-bott"><a href="blog">Blog</a></li>
-                    <li class="li-bott"><a href="contact">Contact Us</a></li>
+                    <li class="li-bott"><a href="home.html">Home</a></li>
+                    <li class="li-bott"><a href="aboutus.html">About Us</a></li>
+                    <li class="li-bott"><a href="services.html">Services</a></li>
+                    <li class="li-bott"><a href="gallery.html">Gallery</a></li>
+                    <li class="li-bott"><a href="blog.html">Blog</a></li>
+                    <li class="li-bott"><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
     	</div>
     </div>
+    </div> <!--end tag sng wrapper-->
+
+    
 </body>
 </html>

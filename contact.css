@@ -125,15 +125,21 @@ html, body{
 #name{
 	width: 20rem;
 	padding: 0.5rem;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--muted-color);
 }
 #email{
 	margin-left: 1.6rem;
 	padding: 0.5rem;
 	width: 20rem;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--muted-color);
 }
 #subject{
 	padding: 0.5rem;
 	width: 43.1rem;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--muted-color);
 }
 #message{
 	padding: 0.5rem;
@@ -142,6 +148,8 @@ html, body{
 	margin: 0.5rem 0;
 	border-color: var(--accent-meddark);
 	resize: none;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--muted-color);
 }
 #button{
 	background-color: var(--accent-meddark);

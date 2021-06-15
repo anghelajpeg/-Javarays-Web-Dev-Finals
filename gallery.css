@@ -1,0 +1,296 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--muted-color);
+}
+
+:root{ 
+	--highlighted-text: #C15F00;
+	--accent-meddark: #F4BF8C;
+	--highlight-color: #F37C48;
+	--muted-color: #7A5F46;
+	--accent-light: #FAF7F1;
+	--accent-med: #F6EAD9;
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar img{
+	height: 80px;
+	margin-left: 80px;
+	cursor: pointer;
+}
+.ul-header{
+	flex: 1;
+	text-align: right;
+	margin: 20px;
+	margin-right: 100px;
+	margin-top: 30px;
+}
+.ul-header .li-header{
+	display: inline-block;
+	list-style: none;
+	margin: 20px;
+}
+.ul-header .li-header a{
+	text-decoration: none;
+	color: var(--muted-color);
+	padding: 0px;
+	position: relative;
+} 
+/*FOR THE HEADER*/
+
+/* DELETE FROM HERE */
+.body-container{    
+    background-color: var(--accent-light);
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+
+.body-container .left{
+    width: 90%;
+   position: relative;
+  /*Instead of height we will use padding*/
+  padding-top: 320px; /*That helps bring the labels down*/
+   float: left;
+  margin: 5rem;
+}
+
+
+/*Last thing remaining is to add transitions*/
+.left>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+  width: 600px;
+  height: 300px;
+  margin: 1rem;
+  box-shadow:1px 2px 10px orange;
+}
+
+.left input[name='slide_switch'] {
+  display: none;
+}
+
+.left label {
+  /*Lets add some spacing for the thumbnails*/
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  /*Default style = low opacity*/
+  opacity: 0.6;
+}
+
+.left label img{
+  display: block;
+  width: 76px;
+  height: 100px;
+}
+
+/*Time to add the click effects*/
+.left input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.left input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.left input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  margin: 1rem;
+}
+
+.body-container .right{
+    margin: 2rem;
+    height: 600px;
+    width: 35%;
+    padding-left: 2.5rem;
+    border-left: 2px solid var(--accent-meddark);
+    border-left-style: solid;
+}
+.body-container .right .sidenews{
+    cursor: pointer;
+}
+.body-container .right .socmed{
+    margin-top: 1.5rem;
+    background-color: var(--accent-med);
+    display: flex;
+    width: 260px;
+    padding: 0.6rem;
+}
+.body-container .right .socmed img{
+    width: 35px;
+    height: 35px;
+    padding: 0 5px;
+}
+.body-container .right .socmed p{
+    font-size: 12px;
+    padding: 0 5px;
+    color: var(--muted-color);
+}
+.sidenews .news1 img, .news2 img, .news3 img{
+	width: 50px;
+	height: 50px;
+    float: left;
+    margin-right: 1.5rem ;
+}
+
+
+
+
+
+
+
+/* TO HERE */
+
+
+/*FOR THE FOOTER*/
+.footer{
+	height: 500px;
+	position: relative;
+    bottom: 0;
+    color: var(--muted-color);
+}
+.footer .f-cont{
+	height: 385px;
+	width: 100%;
+	display: flex;
+	position: absolute;
+    bottom: 0;
+}
+.f-cont{
+	background-color: var(--accent-med);
+	padding-top: 10px;
+}
+.f-sec{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.f-sec img{
+	width: 50px;
+	float:left;
+}
+.f-sec .news1 img, .news2 img, .news3 img{
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+}
+.f-sec .news1, .news2, .news3{
+	margin: 10px 0;
+}
+.links{
+	margin-left: 20px;
+	width: 25%;
+}
+.news{
+	width: 35%;
+}
+.footer .f-bott{
+	background-color: var(--accent-meddark);
+	color: var(--muted-color);
+	width: 100%;
+	text-align:left;
+	position: absolute;
+	bottom: 0px;
+	line-height: 50px;
+}
+p{
+	margin: 0;
+	vertical-align: top;
+}
+#hours, #num{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#fdate, #sdate, #thdate{
+	color: var(--muted-color);
+	opacity: 0.8;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.navbar-bott{
+    display: flex;
+    align-items: center;
+	height: 70px;
+}
+.navbar-bott p{
+	margin-left: 50px;
+}
+.ul-bott{
+	flex: 1;
+	text-align: right;
+}
+.ul-bott .li-bott{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+.ul-bott .li-bott a{
+	text-decoration: none;
+	color: var(--muted-color);
+	position: relative;
+}
+
+.twitter, .facebook{
+	width: 150px;
+	float: left;
+}
+
+.twitter p, .facebook p{
+	margin: 8px;
+	font-size: 12px;
+}
+
+.twitter img, .facebook img{
+	margin-right: 10px;
+	width: 40px;
+}
+
+.navbar .li-header.highlighted a{
+    color: var(--highlight-color);
+}
+
+.wrapper .navbar-hr{
+    width: 100%;
+    background-color: var(--accent-meddark);
+    border-width: 0;
+    color: var(--accent-meddark);
+    height: 1px;
+    margin: 0;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    color: var(--muted-color);
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.top .here{
+    align-self: flex-end;
+}

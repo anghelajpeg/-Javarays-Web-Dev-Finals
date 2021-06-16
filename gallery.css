@@ -49,33 +49,25 @@ html, body{
 	padding: 0px;
 	position: relative;
 } 
-/*FOR THE HEADER*/
-
-/* DELETE FROM HERE */
 .body-container{    
     background-color: var(--accent-light);
     margin-top: 1.5rem;
     display: flex;
 }
 
-
 .body-container .left{
-    width: 90%;
    position: relative;
-  /*Instead of height we will use padding*/
-  padding-top: 320px; /*That helps bring the labels down*/
-   float: left;
-  margin: 5rem;
+    padding-top: 26vw; 
+    width: 50%;
+    margin: 5rem;
 }
 
-
-/*Last thing remaining is to add transitions*/
 .left>img{
   position: absolute;
   left: 0; top: 0;
   transition: all 0.5s;
-  width: 600px;
-  height: 300px;
+  width: 45vw;
+  height: 25vw;
   margin: 1rem;
   box-shadow:1px 2px 10px orange;
 }
@@ -85,38 +77,29 @@ html, body{
 }
 
 .left label {
-  /*Lets add some spacing for the thumbnails*/
-  margin: 18px 0 0 18px;
   border: 3px solid #999;
-  
+  margin: 1vw;
+  margin-right: 0.35vw;
+  left: 0;
   float: left;
   cursor: pointer;
   transition: all 0.5s;
-  
-  /*Default style = low opacity*/
   opacity: 0.6;
 }
 
 .left label img{
   display: block;
-  width: 76px;
-  height: 100px;
+  width: 6vw;
+  height: 5vw;
 }
 
-/*Time to add the click effects*/
 .left input[name='slide_switch']:checked+label {
   border-color: #666;
   opacity: 1;
 }
-/*Clicking any thumbnail now should change its opacity(style)*/
-/*Time to work on the main images*/
 .left input[name='slide_switch'] ~ img {
   opacity: 0;
-  transform: scale(1.1);
 }
-/*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
 .left input[name='slide_switch']:checked+label+img {
   opacity: 1;
   margin: 1rem;
@@ -157,18 +140,9 @@ On click the images will be displayed at normal size to complete the effect
     margin-right: 1.5rem ;
 }
 
-
-
-
-
-
-
-/* TO HERE */
-
-
 /*FOR THE FOOTER*/
 .footer{
-	height: 500px;
+	height: 385px;
 	position: relative;
     bottom: 0;
     color: var(--muted-color);
@@ -293,4 +267,12 @@ p{
 
 .top .here{
     align-self: flex-end;
+}
+
+.body-container .right .recent-works a{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    text-decoration: none;
+    color: var(--muted-color);
 }

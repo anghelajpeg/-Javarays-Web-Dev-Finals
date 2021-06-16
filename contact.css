@@ -98,13 +98,6 @@ html, body{
     float: left;
     margin-right: 1.5rem ;
 }
-.body-container .right .recent-works a{
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-    text-decoration: none;
-    color: var(--muted-color);
-}
 .body-container .left form span{
     color: var(--accent-meddark);
 }
@@ -288,4 +281,12 @@ p{
 
 .top .here{
     align-self: flex-end;
+}
+
+.body-container .right .recent-works a{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    text-decoration: none;
+    color: var(--muted-color);
 }

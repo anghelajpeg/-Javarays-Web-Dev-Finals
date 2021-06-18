@@ -16,12 +16,7 @@ body {
     --accent-light: #FAF7F1;
     --accent-med: #F6EAD9;
 }
-h1{
-	font-size: 50px;
-}
-h3{
-font-size: 30px;
-}
+
 .wrapper {
     height: 100%;
     width: 100%;
@@ -85,24 +80,19 @@ font-size: 30px;
     margin: 0;
 }
 .body-container {
-    background-color: var(--accent-med);
-    height: 110%;
+    background-color: var(--accent-light);
     border-bottom: 1px solid var(--accent-meddark);
 }
 
-.left{
-	width: 50px;
-	height: 206px;
-
-}
 .picture .service{
     display: flex;
-    margin-top: 4rem;
     width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.service p{
+    width: 29vw;
+}
 .picture .service img {
     width: 100%;
     min-width: 28vw;
@@ -114,8 +104,7 @@ font-size: 30px;
 }
 
 .service {
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 2rem;
 	margin-bottom: 5vh;
 }
 .service1,
@@ -128,24 +117,32 @@ span{
 	color: #C15F00;
 
 }
+.left img{
+    width: 99vw;
+}
 .container{
 	display: flex;
 }
 .container .leftp{
 	margin-top: 20px;
-	margin-left: 20px;
-
+	margin-left: 4vw;
+    margin-right: 10vw;
+    width: 80vw;
 }
 .container .right{
-    height: 300px;
-    padding-left: 2.5rem;
-    margin: 20px;
-
-   
+    margin-top: 20px;
+    width: 90vw;
+    margin-right: 5vw;
+}
+.choose-us-content{
+    margin-top: 4vh;
+}
+.choose-us-content h2{
+    margin-top: 4vh;
 }
 /*Footer*/
 .footer {
-    height: 400px;
+    height: 450px;
     position: relative;
     bottom: 0;
     color: var(--muted-color);

@@ -49,7 +49,6 @@ html, body{
 } 
 /*FOR THE HEADER*/
 
-/* DELETE FROM HERE */
 .body-container{    
     background-color: var(--accent-light);
     margin-top: 1.5rem;
@@ -151,8 +150,6 @@ html, body{
 	color: var(--muted-color);
 	border: none;
 }
-/* TO HERE */
-
 
 /*FOR THE FOOTER*/
 .footer{

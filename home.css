@@ -48,6 +48,7 @@ html, body{
 	position: relative;
 } 
 /*FOR THE HEADER*/
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -94,6 +95,7 @@ html, body{
 .dots label:hover {
 	background: var(--muted-color);
 }
+
 #img1:checked ~ .m1{
 	margin-left: 0;
 }
@@ -104,6 +106,26 @@ html, body{
 #img3:checked ~ .m3{
 	width: 100vw;
 	margin-left: -200%;
+}
+
+/*body-cont2*/
+.body-cont2 .servicess{
+	display: flex;
+	margin-top: 4rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.body-cont2 .servicess img{
+	width: 100%;	
+	min-width:28vw;
+	max-width: 28vw;
+}
+.body-cont2 p,h3{
+	margin-left: 20px;
+	margin-top: 5px;
+	padding-left: 20px;
+	padding-top: 5px;
 }
 /*FOR THE FOOTER*/
 .footer{

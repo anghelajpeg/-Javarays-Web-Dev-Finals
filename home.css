@@ -109,24 +109,26 @@ html, body{
 }
 
 /*body-cont2*/
-.body-cont2 .servicess{
-	display: flex;
-	margin-top: 4rem;
-	width: 100%;
+.services1{
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
+	display: flex;
 }
-.body-cont2 .servicess img{
-	width: 100%;	
-	min-width:28vw;
+.services img{
+	width: 100%;
+	min-width: 28vw;
 	max-width: 28vw;
+	margin-bottom: 30px;
 }
-.body-cont2 p,h3{
-	margin-left: 20px;
-	margin-top: 5px;
-	padding-left: 20px;
-	padding-top: 5px;
+.ser1, .ser2, .ser3{
+	margin-top: 50px;
+	padding-left: 50px;
 }
+.ser1, .ser2, .ser3 p,h3{
+	margin-bottom: 30px;
+}
+
 /*FOR THE FOOTER*/
 .footer{
 	height: 400px;

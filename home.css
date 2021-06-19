@@ -108,25 +108,72 @@ html, body{
 	margin-left: -200%;
 }
 
+
+
+
+
+
 /*body-cont2*/
-.body-cont2 .servicess{
-	display: flex;
-	margin-top: 4rem;
-	width: 100%;
+.services{
+	background-color: var(--accent-light);
+}
+.services1{
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
+	display: flex;
 }
-.body-cont2 .servicess img{
-	width: 100%;	
-	min-width:28vw;
+.services1 p{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.services1 h3{
+	margin-bottom: 20px;
+}
+.ser1, .ser2, .ser3{
+	padding: 35px;
+}
+.services img{
+	width: 100%;
+	min-width: 28vw;
 	max-width: 28vw;
+	margin-bottom: 30px;
 }
-.body-cont2 p,h3{
-	margin-left: 20px;
-	margin-top: 5px;
-	padding-left: 20px;
-	padding-top: 5px;
+span{
+	color: var(--highlighted-text);
 }
+
+/*body-cont3*/
+.services2{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: flex;
+}
+.services2 p{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.services2 h3{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.ser4, .ser5, .ser6, .ser7{
+	margin-top: 50px;
+	padding-top: 20px;
+	padding-left: 35px;
+	padding-right: 80px;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 /*FOR THE FOOTER*/
 .footer{
 	height: 400px;

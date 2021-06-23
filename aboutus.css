@@ -100,14 +100,15 @@ body {
 .news3 {
     margin: 10px 0;
 }
-
-.links {
-    margin-left: 20px;
-    width: 25%;
+.links{
+	margin-left: 20px;
+	width: 35%;
 }
-
-.news {
-    width: 35%;
+.news{
+	width: 45%;
+}
+.bhours{
+	width: 35%;
 }
 
 .footer .f-bott {

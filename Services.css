@@ -87,8 +87,7 @@ body {
 .picture .service{
     display: flex;
     width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: center;
 }
 .service p{
     width: 29vw;
@@ -100,19 +99,22 @@ body {
 }
  .picture .body-container {
     text-align: center;
-    margin: 1rem;
 }
 
 .service {
-    padding: 2rem;
+    padding: 2vh 0;
 	margin-bottom: 5vh;
 }
 .service1,
 .service2,
 .service3{
     width: 40vw;
-
+    margin-top: 2rem;
 }
+.service1{
+    margin-left: 3.5vw;
+}
+
 span{
 	color: #C15F00;
 
@@ -185,15 +187,16 @@ span{
     margin: 10px 0;
 }
 
-.links {
-    margin-left: 20px;
-    width: 25%;
+.links{
+	margin-left: 20px;
+	width: 35%;
 }
-
-.news {
-    width: 35%;
+.news{
+	width: 45%;
 }
-
+.bhours{
+	width: 35%;
+}
 .footer .f-bott {
     background-color: var(--accent-meddark);
     color: var(--muted-color);

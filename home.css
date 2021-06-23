@@ -118,8 +118,7 @@ html, body{
 	background-color: var(--accent-light);
 }
 .services1{
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: center;
 	width: 100%;
 	display: flex;
 }
@@ -145,10 +144,10 @@ span{
 
 
 .services2{
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: center;
 	width: 100%;
 	display: flex;
+	font-size: 1.2vw;
 }
 .services2 p{
 	margin-top: 10px;
@@ -160,22 +159,29 @@ span{
 .ser4, .ser5, .ser6, .ser7{
 	margin-top: 5vh;
 	padding: 4vw;
+	padding-bottom: 1vw;
 }
 
 
 .body-cont2 .box{
 	margin: 50px;
 	background-color: var(--accent-med);
-	line-height: 100px;
+	
 	display: flex;
 }
 .box p{
-	float: left;
-	margin-left: 50px;
+	padding: 5vh;
+	margin-left: 4vw;
+}
+.box{
+	padding-right: 5vh;
 }
 .butt{
-	margin-top: 8px;
-	margin-left: 100px;
+	margin-top: 0.7vh;
+	margin-left: 3vw;
+}
+#button{
+	cursor: pointer;
 }
 #lmore{
 	background-color: var(--accent-meddark);
@@ -183,9 +189,9 @@ span{
 	font-weight: 600;
 	color: var(--muted-color);
 	border: none;
-	float: right;
-	padding: 1rem 3rem;
-	margin-top: 1rem;
+	padding: 2.5vh 3vw;
+	margin-top: 2vh;
+	cursor: pointer;
 }
 .contact_us{
 	background-color: var(--accent-light);
@@ -195,11 +201,16 @@ span{
 .contact_us .contact_left {
    padding: 50px;
 }
-.contact_left p {
-    font-family: 'Montserrat', sans-serif;
+.contact_left p{
+	font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
 }
-
+.contact_left p:not(.not) {
+	font-size: 1vw;
+}
+.contact_left{
+	width: 50%;
+}
 .java,
 .javascript,
 .python,
@@ -253,7 +264,9 @@ span{
     width: 75%;
     border-radius: 5px;
 }
-
+.java .bar p{
+	width: 2.7vw;
+}
 .java .bar {
     background-color: var(--accent-meddark);
     height: 5vh;
@@ -327,19 +340,23 @@ span{
 
 /*FOR THE FOOTER*/
 .footer{
-	height: 400px;
+	height: 385px;
 	position: relative;
+    bottom: 0;
+    color: var(--muted-color);
 }
 .footer .f-cont{
-	height: 348px;
+	height: 385px;
+	width: 100%;
+	
+	justify-content: center;
 	display: flex;
-}
-.footer{
-	color: var(--muted-color);
+	position: absolute;
+    bottom: 0;
 }
 .f-cont{
 	background-color: var(--accent-med);
-	padding-top: 10px;
+	padding-top: 30px;
 }
 .f-sec{
 	padding-top: 10px;
@@ -359,9 +376,12 @@ span{
 }
 .links{
 	margin-left: 20px;
-	width: 25%;
+	width: 35%;
 }
 .news{
+	width: 45%;
+}
+.bhours{
 	width: 35%;
 }
 .footer .f-bott{
